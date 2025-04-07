@@ -10,7 +10,7 @@ model = joblib.load("uk_random_forest_sentiment_model.pkl")
 vectorizer = joblib.load("uk_tfidf_vectorizer.pkl")
 
 # App Title
-st.title("🇬🇧 United Kingdom Wikipedia Sentiment Analysis")
+st.title("United Kingdom Wikipedia Sentiment Analysis")
 st.subheader("Powered by Random Forest Classifier")
 
 st.markdown("""
