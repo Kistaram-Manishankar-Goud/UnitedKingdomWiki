@@ -51,21 +51,7 @@ if st.button("🔍 Analyze Sentiment"):
     ax.set_ylabel("Probability")
     st.pyplot(fig)
     
-    # TextBlob Analysis
-    blob = TextBlob(user_input)
-    polarity = blob.sentiment.polarity
-    subjectivity = blob.sentiment.subjectivity
-    
-    st.markdown("#### 🧠 TextBlob Sentiment Analysis")
-    st.write(f"- **Polarity:** `{polarity:.2f}`")
-    st.write(f"- **Subjectivity:** `{subjectivity:.2f}`")
-
-    # Seaborn Barplot for TextBlob
-    fig2, ax2 = plt.subplots(figsize=(6, 3))
-    sns.barplot(x=["Polarity", "Subjectivity"], y=[polarity, subjectivity], palette='coolwarm')
-    ax2.set_ylim(-1, 1)
-    ax2.set_title("TextBlob Sentiment Insights")
-    st.pyplot(fig2)
+  
 
 # Footer
 st.markdown("---")
